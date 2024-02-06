@@ -1,0 +1,28 @@
+
+.myCards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 150px;
+  
+}
+
+.navbar{
+       background-color: gray;
+       border-radius: 20px;
+       position: fixed;
+       width: 100%;
+       top: 0;
+       z-index: 1;
+       /*display: flex;
+       justify-content: flex-end;*/
+}
+.nav3{
+    display: flex;
+}
+/*.nav2,.nav1,.nav3{
+    border: 1px solid red;
+}*/
+.nav2{
+       text-align: center;
+}
