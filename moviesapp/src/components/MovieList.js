@@ -7,6 +7,7 @@ import "./MovieList.css";
 
 
 export function MovieList() {
+
   const [count, setCount] = useState(3);
   const [selectedRating, setSelectedRating] = useState("0");
   const [RTitle,setRTitle] = useState('');
@@ -39,6 +40,8 @@ export function MovieList() {
         setRTitle('');
       }
   }
+
+  
   return (
     <>
       <div className="navbar">
@@ -97,7 +100,7 @@ export function MovieList() {
               description={movie.description}
               posterUrl={movie.posterUrl}
               rating={movie.rating}
-            />
+           />
           )) }
 
         {selectedRating !== "0"   && RTitle==='' &&
@@ -106,7 +109,6 @@ export function MovieList() {
             .map((movie) => (
               <MovieCard
                 title={movie.title}
-                description={movie.description}
                 posterUrl={movie.posterUrl}
                 rating={movie.rating}
               />
